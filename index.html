@@ -1,49 +1,103 @@
 <!DOCTYPE html>
-<html><head>
-
-
-
-
-
-   
+<html>
+  <head>
+    <title>Your Name - Personal Website</title>
     <style>
-    *{
-       font-family: arial, helvetica, sans-serif;
-          overflow-x: auto;
-          white-space: div-wrap;
-          white-space: -moz-div-wrap;
-          white-space: -div-wrap;
-          white-space: -o-div-wrap;
-          word-wrap: break-word;
-       }
+      /* Add some basic styling here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1, h2, h3 {
+        margin: 0;
+      }
+      /* Create a navigation bar at the top of the page */
+      nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: lightgrey;
+      }
+      /* Style the main content area */
+      .main-content {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      /* Style the side menu */
+      .side-menu {
+        background-color: #eee;
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+      }
+      .side-menu h2 {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      .side-menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .side-menu li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #333;
+      }
+      .side-menu li a:hover {
+        background-color: #ddd;
+      }
+      /* Style the footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
     </style>
- <style></style></head>
-
-<body><div><strong><span style="font-size: 12pt;">Walter Dych</span></strong><br>
-<span style="font-size: 12pt;"><strong>Email</strong>: wdych [æt] udel [dɑt] edu</span><br>
-</div><br>
-
-<img src="profile_picture.png" alt="This is supposed to be my face but it didn't load :(" style="width:256px;height:320px;"><br>
-
-<div><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong><a href="https://github.com/walterdych">Github</a> <a href="https://www.linkedin.com/in/walter-dych/">Linkedin</a></strong></span></div><br>
-
-<div><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><b>Primary research interests<br>
-</b>• Prosodic-Speech Gestures<br>
-• Use of Machine Learning Models to detect gesture timing<br>
-• Historical Sound Change<br>
-• Diglossia</span></div><br>
-
-<div><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Academic history</strong><br>
-(2019-Present)  B.A., University of Delaware (Major in Linguistics, Minor in European Studies)</span></div><br>
-
-<div><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Projects</strong><br>
-• <a href="https://walterdych.github.io/gesturemappingposter.jpg">Medumba Gesture Mapping Poster</a></span></div><br>
-
-<div><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"><strong>Relevant Skills</strong><br>
-•  PRAAT Scripting<br>
-•  ELAN Video Annotation<br>
-•  Data Processing and Analysis in R, Python<br>
-•  Super Computing<br>
-•  Languages: Dutch (Native), English (Native), Spanish (C2), German (C2), Italian (B2), Russian (B1), Chinese (B1)<br>
-
-</div></body></html>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Research</a>
+      <a href="#">Publications</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="main-content">
+      <h1>Your Name</h1>
+      <h2>Academic Career</h2>
+      <p>
+        Write a brief introduction about yourself and your academic career here.
+      </p>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>Degree Name, Institution</h3>
+          <p>
+            Write a brief description of your degree and the institution where you studied here.
+          </p>
+        </li>
+        <!-- Add additional degrees here -->
+      </ul>
+      <h2>Research Interests</h2>
+      <p>
+        List and describe your research interests here.
+      </p>
+      <h2>Publications</h2>
+      <ul>
