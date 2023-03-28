@@ -167,7 +167,7 @@ footer p {
 	color: #333;
 	background-color: #fff;
 	transition: border-color 0.3s ease;
-	width: 100%;
+	width: 50%;
 }
 
 .form-group input:focus,
