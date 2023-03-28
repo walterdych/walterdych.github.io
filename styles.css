@@ -163,11 +163,11 @@ footer p {
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.25;
 	color: #333;
 	background-color: #fff;
 	transition: border-color 0.3s ease;
-	width: 50%;
+	width: 90%;
 }
 
 .form-group input:focus,
@@ -183,6 +183,6 @@ button[type="submit"] {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 15px;
 	align-self: left;
 }
