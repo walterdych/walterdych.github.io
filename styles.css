@@ -1,11 +1,78 @@
+/* Reset default browser styles */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
 /* Global styles */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
 
 body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	color: #333;
-	background-color: #f2f2f2;
+	background-color: #f7f7f7;
 }
 
 a {
@@ -17,19 +84,39 @@ a:hover {
 	color: #666;
 }
 
-button,
-input[type="submit"] {
-	background-color: #333;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
-button:hover,
-input[type="submit"]:hover {
-	background-color: #666;
+/* Header section */
+#home-section {
+	background-color: #333;
+	color: #fff;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.home-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.home-content h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.home-image {
+	margin-top: 50px;
+}
+
+.home-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+	height: auto;
 }
 
 /* Header styles */
@@ -187,30 +274,3 @@ button[type="submit"] {
 	align-self: left;
 }
 
-#home-section {
-	background-color: #ffffff;
-	color: #3e3e3e;
-	padding: 50px 0;
-	text-align: center;
-}
-
-.home-content {
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-.home-content h1 {
-	font-size: 48px;
-	margin-bottom: 20px;
-}
-
-.home-image {
-	margin-top: 50px;
-}
-
-.home-image img {
-	display: block;
-	margin: 0 auto;
-	max-width: 300px;
-	height: auto;
-}
