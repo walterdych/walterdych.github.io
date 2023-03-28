@@ -11,12 +11,12 @@ html {
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.5;
-	color: #333;
+	color: #ffffff;
 	background-color: #404040;
 }
 
 a {
-	color: #333;
+	color: #404040;
 	text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a:hover {
 
 /* Navigation menu */
 nav {
-	background-color: #fff;
+	background-color: #404040;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -83,7 +83,7 @@ nav li:last-child {
 nav a {
 	font-size: 18px;
 	font-weight: bold;
-	color: #333;
+	color: #ffffff;
 }
 
 nav a:hover {
@@ -105,13 +105,13 @@ section h2 {
 #contact-form {
 	background-color: #fff;
 	padding: 100px 0;
-	text-align: center;
+	text-align: left;
 }
 
 #contact-form form {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: left;
 	align-items: flex-start;
 }
 
