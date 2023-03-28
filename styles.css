@@ -1,0 +1,138 @@
+/* Global styles */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+}
+
+button,
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: #666;
+}
+
+/* Header styles */
+
+header {
+	background-color: #9f9f9f;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+header h1 {
+	margin: 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #333;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #f2f2f2;
+}
+
+/* Main styles */
+
+main {
+	margin-top: 80px;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	margin: 0 0 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+section p {
+	margin: 0 0 20px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.button {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.project {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.project img {
+	max-width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.project h3 {
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Footer styles */
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
