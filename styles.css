@@ -1,63 +1,3 @@
-/* Reset default browser styles */
-html,
-body,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font-weight: normal;
-	vertical-align: baseline;
-	background: transparent;
-}
-
 /* Global styles */
 html {
 	box-sizing: border-box;
@@ -92,9 +32,9 @@ a:hover {
 
 /* Header section */
 #home-section {
-	background-color: #ffffff;
-	color: #404040;
-	padding: 50px 0;
+	background-color: #333;
+	color: #fff;
+	padding: 100px 0;
 	text-align: center;
 }
 
@@ -119,115 +59,59 @@ a:hover {
 	height: auto;
 }
 
-/* Header styles */
-
-header {
-	background-color: #9f9f9f;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 999;
-}
-
-header h1 {
-	margin: 0;
-	padding: 10px;
-	font-weight: bold;
-	font-size: 22px;
-	color: #333;
+/* Navigation menu */
+nav {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 20px;
 }
 
 nav li {
-	margin: 0 10px;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
 }
 
 nav a {
-	display: block;
-	padding: 10px;
+	font-size: 18px;
 	font-weight: bold;
-	transition: background-color 0.3s ease;
+	color: #333;
 }
 
 nav a:hover {
-	background-color: #f2f2f2;
-}
-
-/* Main styles */
-
-main {
-	margin-top: 80px;
-	padding: 20px;
-}
-
-section {
-	margin-bottom: 40px;
-}
-
-section h2 {
-	margin: 0 0 20px;
-	font-size: 24px;
-	font-weight: bold;
-	color: #333;
-}
-
-section p {
-	margin: 0 0 20px;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-.button {
-	display: inline-block;
-	margin: 10px 0;
-}
-
-.project {
-	background-color: #fff;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	border-radius: 5px;
-}
-
-.project img {
-	max-width: 100%;
-	border-radius: 5px;
-	margin-bottom: 10px;
-}
-
-.project h3 {
-	margin: 0 0 10px;
-	font-size: 20px;
-	font-weight: bold;
-	color: #333;
-}
-
-/* Footer styles */
-
-footer {
-	background-color: #f2f2f2;
-	padding: 20px;
-	text-align: center;
-}
-
-footer p {
-	margin: 0;
-	font-size: 14px;
 	color: #666;
 }
 
+/* Main content section */
+section {
+	padding: 100px 0;
+	text-align: center;
+}
+
+section h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+/* Contact form section */
+#contact-form {
+	background-color: #fff;
+	padding: 100px 0;
+	text-align: center;
+}
 
 #contact-form form {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: flex-start;
 }
 
@@ -250,11 +134,11 @@ footer p {
 	border: 2px solid #ccc;
 	border-radius: 5px;
 	font-size: 16px;
-	line-height: 1.25;
+	line-height: 1.5;
 	color: #333;
 	background-color: #fff;
 	transition: border-color 0.3s ease;
-	width: 90%;
+	width: 100%;
 }
 
 .form-group input:focus,
@@ -270,7 +154,88 @@ button[type="submit"] {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 15px;
-	align-self: left;
+	margin-top: 20px;
+	align-self: center;
 }
 
+/* Footer section */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 50px 0;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 20px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin-right: 20px;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+    
+    footer a {
+    color: #fff;
+}
+    
+/* Media queries */
+@media screen and (max-width: 767px) {
+    .container {
+    padding: 0 10px;
+    }
+    .home-content h1 {
+        font-size: 36px;
+    }
+    
+    .home-image img {
+        max-width: 300px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    nav li:last-child {
+        margin-bottom: 0;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    #contact-form {
+        padding: 50px 0;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: auto;
+    }
+}
