@@ -136,21 +136,29 @@ footer p {
 	font-size: 14px;
 	color: #666;
 }
+
+
+#contact-form form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 .form-group {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	margin-bottom: 20px;
 }
 
 .form-group label {
-	display: block;
-	margin-bottom: 5px;
 	font-weight: bold;
 	color: #333;
+	margin-bottom: 5px;
 }
 
 .form-group input,
 .form-group textarea {
-	display: block;
-	width: 100%;
 	padding: 10px;
 	border: 2px solid #ccc;
 	border-radius: 5px;
@@ -159,6 +167,7 @@ footer p {
 	color: #333;
 	background-color: #fff;
 	transition: border-color 0.3s ease;
+	width: 100%;
 }
 
 .form-group input:focus,
@@ -174,8 +183,6 @@ button[type="submit"] {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
-}
-
-button[type="submit"]:hover {
-	background-color: #666;
+	margin-top: 20px;
+	align-self: left;
 }
