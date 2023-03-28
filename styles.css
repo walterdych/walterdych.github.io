@@ -48,7 +48,7 @@ header h1 {
 	margin: 0;
 	padding: 10px;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 22px;
 	color: #333;
 }
 
@@ -187,30 +187,30 @@ button[type="submit"] {
 	align-self: left;
 }
 
-#home-header {
-	background-color: #333;
-	color: #fff;
-	padding: 100px 0;
+#home-section {
+	background-color: #ffffff;
+	color: #3e3e3e;
+	padding: 50px 0;
 	text-align: center;
 }
 
-.header-content {
-	max-width: 800px;
+.home-content {
+	max-width: 500px;
 	margin: 0 auto;
 }
 
-.header-content h1 {
+.home-content h1 {
 	font-size: 48px;
 	margin-bottom: 20px;
 }
 
-.header-image {
+.home-image {
 	margin-top: 50px;
 }
 
-.header-image img {
+.home-image img {
 	display: block;
 	margin: 0 auto;
-	max-width: 500px;
+	max-width: 300px;
 	height: auto;
 }
