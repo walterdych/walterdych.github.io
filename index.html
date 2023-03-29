@@ -6,6 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="letter-w-key-keyboard-3-512.png">
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		.home-content,
+		.home-image {
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+		}
+
+		.home-content.in-view,
+		.home-image.in-view {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.home-content {
+			transform: translateY(20px);
+		}
+
+		.home-image {
+			transform: translateY(-20px);
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -21,11 +44,11 @@
 	<main>
 		<section id="home-section">
       <div class="container">
-        <div class="home-content">
+        <div class="home-content fade-in in-view">
           <h1>Hello, I'm Walter Dych</h1>
           <p>I am a linguist with a focus on historical linguistics, gesture-speech relations, phonetics, phonology, and computational methods.</p>
         </div>
-        <div class="home-image">
+        <div class="home-image fade-in in-view">
           <img src="profile_picture.png" alt="Walter Dych">
         </div>
       </div>
@@ -47,5 +70,35 @@
 	<footer>
 		<p>Copyright &copy; 2023 Walter Dych</p>
 	</footer>
-</body>
-</html>
+	<script>
+    var homeContent = document.querySelector('.home-content');
+    var homeImage = document.querySelector('.home-image');
+  
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    function addInViewClass() {
+      if (isInViewport(homeContent)) {
+        homeContent.classList.add('in-view');
+      }
+      if (isInViewport(homeImage)) {
+        homeImage.classList.add('in-view');
+      }
+    }
+  
+    window.addEventListener('load', function() {
+      addInViewClass();
+    });
+  
+    window.addEventListener('scroll', function() {
+      addInViewClass();
+    });
+  </script>
+  

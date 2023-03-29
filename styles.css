@@ -240,3 +240,41 @@ footer li:last-child {
         width: auto;
     }
 }
+
+/* Add the "fade-in" class to elements that should fade in */
+.fade-in {
+	opacity: 0;
+	transition: opacity 0.6s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Apply the animation to elements that have the "fade-in" class and are in the viewport */
+.fade-in.in-view {
+	opacity: 1;
+	transform: translateY(0);
+	animation: fade-in 0.6s ease-in-out;
+}
+
+/* Detect when elements enter the viewport */
+.in-view {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* Add the "in-view" class to elements when they enter the viewport */
+.in-view.is-visible {
+	opacity: 1;
+	visibility: visible;
+}
