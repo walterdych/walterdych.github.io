@@ -1,104 +1,62 @@
-/* Global styles */
-html {
-	box-sizing: border-box;
-	font-size: 14px;
-}
-
-*, *::before, *::after {
-	box-sizing: inherit;
-}
-
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	color: #ffffff;
-	background-color: #404040;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-	color: #ffffff;
-	text-decoration: none;
+header {
+    background-color: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-	color: #666;
+header h1 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
-
-/* Header section */
-#home-section {
-	background-color: #ffffff;
-	color: #404040;
-	padding: 50px 0;
-	text-align: center;
-}
-
-.home-content {
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-.home-content h1 {
-	font-size: 48px;
-	margin-bottom: 20px;
-}
-
-.home-image {
-	margin-top: 50px;
-}
-
-.home-image img {
-	display: block;
-	margin: 0 auto;
-	max-width: 500px;
-	height: auto;
-}
-
-/* Navigation menu */
-nav {
-	background-color: #404040;
-	border-bottom: 1px solid #ccc;
-}
-
+ 
 nav ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 20px;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-nav li:last-child {
-	margin-right: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-	font-size: 18px;
-	font-weight: bold;
-	color: #ffffff;
+    color: #333;
+    text-decoration: none;
 }
 
-nav a:hover {
-	color: #666;
+main {
+    padding: 20px;
 }
 
-/* Main content section */
-section {
-	padding: 100px 0;
-	text-align: center;
+footer {
+    background-color: #FFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-	font-size: 36px;
-	margin-bottom: 20px;
+.date {
+    float: right;
+}
+
+.list{
+	text-align: left;
 }
 
 /* Contact form section */
@@ -159,124 +117,3 @@ button[type="submit"] {
 	align-self: center;
 }
 
-
-/* Footer section */
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 50px 0;
-	text-align: center;
-}
-
-footer p {
-	margin-bottom: 1px;
-    margin-top: 1px;
-}
-
-footer ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-footer li {
-	margin-right: 20px;
-}
-
-footer li:last-child {
-    margin-right: 0;
-}
-    
-    footer a {
-    color: #fff;
-}
-    
-/* Media queries */
-@media screen and (max-width: 767px) {
-    .container {
-    padding: 0 10px;
-    }
-    .home-content h1 {
-        font-size: 36px;
-    }
-    
-    .home-image img {
-        max-width: 300px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    
-    nav li:last-child {
-        margin-bottom: 0;
-    }
-    
-    nav a {
-        font-size: 16px;
-    }
-    
-    section {
-        padding: 50px 0;
-    }
-    
-    section h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    #contact-form {
-        padding: 50px 0;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        width: auto;
-    }
-}
-
-/* Add the "fade-in" class to elements that should fade in */
-.fade-in {
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-}
-
-/* Define the animation */
-@keyframes fade-in {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-/* Apply the animation to elements that have the "fade-in" class and are in the viewport */
-.fade-in.in-view {
-	opacity: 1;
-	transform: translateY(0);
-	animation: fade-in 0.6s ease-in-out;
-}
-
-/* Detect when elements enter the viewport */
-.in-view {
-	opacity: 0;
-	visibility: hidden;
-}
-
-/* Add the "in-view" class to elements when they enter the viewport */
-.in-view.is-visible {
-	opacity: 1;
-	visibility: visible;
-}
